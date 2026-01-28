@@ -1,0 +1,6 @@
+/* App-level layout reset so pages can control their own centering */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+

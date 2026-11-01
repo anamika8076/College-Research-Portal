@@ -1,0 +1,26 @@
+MONGODB NOT CONNECTING:
+How to fix:
+
+Create the data directory for MongoDB
+Open your terminal and run:
+
+mkdir -p ~/data/db
+
+(Optional) Set the correct permissions
+You may want to ensure you have permissions to write to this directory:
+
+chmod 755 ~/data/db
+
+Start MongoDB again
+Run:
+
+mongod --dbpath ~/data/db
+
+You should see log messages indicating the server is starting without errors and is now listening on port 27017.
+
+Connect with Compass
+Return to MongoDB Compass and use the connection string:
+
+mongodb://localhost:27017/
+
+You should now be able to connect!
